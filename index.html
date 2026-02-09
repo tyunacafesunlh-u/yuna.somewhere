@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プレミアム Todo アプリ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="app-container glass-panel">
+        <header class="app-header">
+            <div id="progress-chart" class="chart-container">
+                <div class="pie-chart"></div>
+            </div>
+            <div class="header-text">
+                <h1>業務チェックリスト</h1>
+                <p class="subtitle">Daily Business Routine</p>
+                <input type="date" id="date-picker" class="date-navigator">
+            </div>
+        </header>
+
+        <!-- No Input for Routine Mode -->
+        <!-- Just the list container which acts as the main wrapper now -->
+
+        <div id="todo-list" class="checklist-container">
+            <!-- Dynamic Content Here -->
+        </div>
+
+        <div class="app-footer">
+            <div id="items-left" class="progress-text">準備中...</div>
+            <button onclick="window.manualReset()" class="reset-link">手動リセット</button>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
